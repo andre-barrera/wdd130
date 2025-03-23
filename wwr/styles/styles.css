@@ -1,0 +1,124 @@
+:root{
+    --primary-color: #519872;
+    --secondary-color:  #3B5249;
+    --accent1-color: #A4B494;
+    --accent2-color: #BEC5AD;
+    --primary-colorRGBA: 81, 152, 114;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: white;
+}
+
+h1, h2 {
+    font-family: 'boldonse', sans-serif;
+}
+
+header img {
+    height: 180px;
+    width: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+   }
+
+.hero img {
+    display: absolute;
+    width: 100%; 
+    height: auto;
+}
+
+/* Hero Title */
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 5%; 
+    right: 3%; 
+    width: 50%; 
+    padding: 10px; 
+    background-color: rgba(var(--primary-colorRGBA),0.7); 
+    color: white;
+    border-radius: 10px; 
+}
+
+.hero article p{
+    color: white;
+    position: absolute;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+
+.hero article img {
+    float: right; 
+    width: 200px;
+    height: auto;
+    margin-left: 15px;
+    border: 1px;
+}
+
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+/* Adventure Section */
+section img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.sociallinks img {
+    width: 30px;
+    margin: 0 10px;
+}
