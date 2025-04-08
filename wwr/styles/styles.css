@@ -202,9 +202,6 @@ section img {
     text-align: center;
 }
 
-
-
-
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -347,10 +344,6 @@ button:hover {
     align-items: center;
 }
 
-.newsletter {
-    display: grid;
-    align-items: center;
-}
 
 .form-item.column {
     display: grid;
@@ -358,12 +351,6 @@ button:hover {
     margin: 0.5rem 5rem;
 }
 
-.form-item.column3 {
-    display: flex;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-    margin: 0.5rem 0;
-}
 
 .radio {
     display: flex;
@@ -372,12 +359,6 @@ button:hover {
     margin-bottom: 0.25rem; 
 }
 
-.newsletter {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; 
-    margin-top: 1rem; 
-}
 
 .employees {
     display: flex;
