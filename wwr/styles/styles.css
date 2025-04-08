@@ -62,7 +62,6 @@ nav {
    }
 
 .hero img {
-    display: absolute;
     width: 100%; 
     height: auto;
     padding-top: 10px;
@@ -225,8 +224,8 @@ footer p {
 
 .sociallinks {
     display: flex; 
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
     grid-row: 2;
 }
 
