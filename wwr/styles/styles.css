@@ -22,9 +22,9 @@ header{
     }
 
 h1, h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-weight: 400;
+font-family: "Bebas Neue", sans-serif;
+font-style: normal;
+font-weight: 400;
 }
 
 header img {
@@ -234,4 +234,184 @@ footer p {
     width: 30px;
     margin: 0 10px;
     grid-row: 2;
+}
+
+
+/*Contact Us Page*/
+
+
+.contacttitle h2 {
+    font-size: 50px;
+}
+
+.contacttitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center; /* Ensure text inside <p> is centered */
+    width: 100%;
+}
+
+.contacttitle p {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* Optional: centers the block if it has a set width */
+    width: 80%; /* Adjust as needed */
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map iframe {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form {
+    width: 650px;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, Sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.longtext {
+    display: grid;
+    align-items: center;
+}
+
+.newsletter {
+    display: grid;
+    align-items: center;
+}
+
+.form-item.column {
+    display: grid;
+    align-items: center;
+    margin: 0.5rem 5rem;
+}
+
+.form-item.column3 {
+    display: flex;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; 
+    margin-bottom: 0.25rem; 
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    margin-top: 1rem; 
+}
+
+.employees {
+    display: flex;
+    justify-content: center; /* or space-between / space-around / flex-start */
+    gap: 20px;               /* adds space between the figures */
+    flex-wrap: wrap;         /* allows wrapping on smaller screens (optional) */
+    margin: 20px 0;
+}
+
+.employees figure {
+    position: relative;
+    width: 200px; 
+}
+
+
+
+.employees figure img {
+    width: 200px;
+    height: 320px;
+    display: block;
+    border-radius: 8px;
+}
+
+.employees figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
