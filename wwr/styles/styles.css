@@ -240,16 +240,16 @@ footer p {
 /*Contact Us Page*/
 
 
-.contacttitle h2 {
+.contacttitle h1 {
     font-size: 50px;
 }
 
 .contacttitle {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center content */
-    align-items: center; /* Horizontally center content */
-    text-align: center; /* Ensure text inside <p> is centered */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
     width: 100%;
 }
 
@@ -257,13 +257,13 @@ footer p {
     font-size: 20px;
     text-align: center;
     display: block;
-    margin: 0 auto; /* Optional: centers the block if it has a set width */
-    width: 80%; /* Adjust as needed */
+    margin: 0 auto; 
+    width: 80%; 
 }
 
 .contactinfo {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
     gap: 10px;
@@ -382,9 +382,9 @@ button:hover {
 
 .employees {
     display: flex;
-    justify-content: center; /* or space-between / space-around / flex-start */
-    gap: 20px;               /* adds space between the figures */
-    flex-wrap: wrap;         /* allows wrapping on smaller screens (optional) */
+    justify-content: center; 
+    gap: 20px;               
+    flex-wrap: wrap;        
     margin: 20px 0;
 }
 
