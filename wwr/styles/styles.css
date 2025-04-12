@@ -436,7 +436,8 @@ button:hover {
     width: 100%;
 }
 
-.homebanner button, .homebanner a.btn {
+.button-link {
+    text-decoration: none;
     position: absolute;
     top: 70%;
     left: 50%;
