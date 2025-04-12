@@ -99,7 +99,7 @@ header nav a {
     border-radius: 10px; 
 }
 
-.hero article h1{
+.hero article h2{
     color: white;
     font-size: 1.5rem;
     position: absolute;
@@ -576,18 +576,15 @@ button:hover {
 }
 
 .packages a {
-    grid-row: 3;
-    grid-column: 2;
-    justify-self: center;
-    margin-top: 4rem;
-}
-
-table {
-
     grid-row: 4;
     grid-column: 2;
     justify-self: center;
-    margin-top: 6rem;
+    margin-top: 13rem;
+}
+
+table {
+    justify-self: center;
+    margin-top: 15rem;
     border-collapse: collapse;
     margin-bottom: 5rem;
 }
