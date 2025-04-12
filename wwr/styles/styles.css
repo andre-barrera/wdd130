@@ -443,7 +443,7 @@ button:hover {
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--primary-color);
+    background-color: darkgreen;
     color: white;
     padding: 15px 60px;
     border: none;
@@ -519,6 +519,13 @@ button:hover {
     grid-row: 2;     
 }
 
+.homeform button {
+    background-color: darkgreen;
+}
+
+.homeform legend{
+    color: black;
+}
 
 .homeform figcaption {
     position: absolute;
