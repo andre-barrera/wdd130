@@ -99,12 +99,13 @@ header nav a {
     border-radius: 10px; 
 }
 
-.hero article p{
+.hero article h1{
     color: white;
+    font-size: 1.5rem;
     position: absolute;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-top: 50px;
-    margin-left: 35px;
+    left: 5%;
 }
 
 
