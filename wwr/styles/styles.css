@@ -4,6 +4,7 @@
     --accent1-color: #A4B494;
     --accent2-color: #BEC5AD;
     --primary-colorRGBA: 81, 152, 114;
+    max-width: 100%;
 }
 
 body {
@@ -13,26 +14,34 @@ body {
     line-height: 1.6;
 }
 
-
-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    background-color: var(--primary-color);
-    }
-
 h1, h2 {
 font-family: "Bebas Neue", sans-serif;
 font-style: normal;
 font-weight: 400;
 }
 
+header {
+    position: absolute;
+    width: 97.3%;
+    background-color: rgba(81, 152, 114, 0.8);
+    z-index: 10;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+
 header img {
-    grid-column-start: 2;
     height: 125px;
     width: auto;
-    padding: 20px 20px 20px 20px;
+}
 
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-grow: 1; 
+    gap: 4rem;
 }
 
 header nav a {
@@ -40,17 +49,11 @@ header nav a {
     color: white;
     font-weight: bold;
     background-color: var(--secondary-color);
-    padding: 20px;
-    border: black;
+    padding: 15px 60px;  
+    margin: 0 10px;  
     border-radius: 1em;
+    transition: background-color 0.3s ease;
 }
-
-nav {
-    display: flex;
-    grid-column-start: 6;
-    justify-items: center;
-}
-
 
 .hero {
     display: flex;
@@ -388,10 +391,140 @@ button:hover {
     left: 0;
     right: 0;
     padding: 8px;
-    background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    background: rgba(0, 0, 0, 0.6); 
     color: white;
     text-align: center;
     font-size: 1rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+/* Homepage*/
+
+.homebanner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+}
+
+.homebanner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.homebanner h1 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+}
+
+.homebanner button, .homebanner a.btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+
+.homeform { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: auto auto;       
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;  
+    align-items: center;    
+}
+
+
+.homeform figure {
+    position: relative; 
+    margin: 0;
+    width: 100%;
+}
+
+.homeform figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.homeform figure:nth-child(1) {
+    width: 400px;
+    height: auto;
+    grid-column: 1;  
+    grid-row: 1;   
+}
+
+.homeform figure:nth-child(1) img{
+    width: 100%;
+    height: auto;
+}
+
+.homeform figure:nth-child(2) {
+    width: 400px;
+    height: auto;
+    grid-column: 3; 
+    grid-row: 1;    
+}
+
+.homeform figure:nth-child(2) img {
+    width: 100%;
+    height: auto;
+}
+
+.homeform figure:nth-child(3) {
+    width: 400px;
+    grid-column: 2; 
+    grid-row: 1;     
+}
+
+.homeform figure:nth-child(3) img {
+    width: 100%;
+    height: auto;
+}
+
+.homeform form {
+    padding: 5rem;
+    max-width: 400px;
+    grid-column: 2;  
+    grid-row: 2;     
+}
+
+
+.homeform figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+
+
