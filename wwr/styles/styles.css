@@ -25,6 +25,14 @@ font-style: normal;
 font-weight: 400;
 }
 
+.adventure h2{
+    color: darkgreen;
+}
+
+.history h2{
+    color: darkgreen;
+}
+
 header {
     position: fixed;
     width: 97.3%;
