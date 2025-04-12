@@ -441,7 +441,7 @@ button:hover {
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     color: white;
     padding: 15px 60px;
     border: none;
