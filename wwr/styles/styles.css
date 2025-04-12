@@ -531,5 +531,82 @@ button:hover {
     box-sizing: border-box;
 }
 
+/*Trips Page*/
 
+.packages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
 
+.packages h1 {
+    grid-column: 2;
+    grid-row: 1;
+    color: var(--primary-color);
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.packages figure {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    grid-row: 2;
+}
+
+.packages figure img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.packages figcaption {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.packages a {
+    grid-row: 3;
+    grid-column: 2;
+    justify-self: center;
+    margin-top: 4rem;
+}
+
+table {
+
+    grid-row: 4;
+    grid-column: 2;
+    justify-self: center;
+    margin-top: 6rem;
+    border-collapse: collapse;
+    margin-bottom: 5rem;
+}
+
+th {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+td {
+    border: 2px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.wireframe a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    padding: 5px 40px;  
+    border-radius: 1em;
+    transition: background-color 0.3s ease;
+}
