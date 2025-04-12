@@ -303,6 +303,10 @@ form {
     display: grid;
 }
 
+form button{
+    background-color: darkgreen;
+}
+
 fieldset {
     display: grid;
     grid-gap: .5rem;
@@ -313,7 +317,7 @@ fieldset {
 
 legend {
     padding: 0.5rem;
-    color: var(--primary-color);
+    color: black;
     font-size: 1.3em;
 }
 
@@ -559,7 +563,7 @@ button:hover {
 .packages h1 {
     grid-column: 2;
     grid-row: 1;
-    color: var(--primary-color);
+    color: darkgreen;
     text-align: center;
     align-items: center;
     font-size: 3rem;
@@ -595,11 +599,16 @@ button:hover {
     grid-column: 2;
     justify-self: center;
     margin-top: 13rem;
+    background-color: darkgreen;
+    padding: 20px 60px;
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
 }
 
 table {
     justify-self: center;
-    margin-top: 15rem;
+    margin-top: 11rem;
     border-collapse: collapse;
     margin-bottom: 5rem;
 }
